@@ -1,56 +1,52 @@
 {
   "name": "ninastartertheme",
   "version": "1.0.0",
-  "description": "ninastartertheme",
+  "description": "Based on the Timber Starter Theme, modified for my needs. To use with ACF, Gutenberg, Sass, Javascript, Gulp",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "css-reset-and-normalize": "^2.3.5",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/register": "^7.13.8",
+    "autoprefixer": "^9.0.0",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.14",
+    "css-vars-ponyfill": "^1.17.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "object-fit-images": "^3.2.4",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^6.1.2",
+    "yargs": "^16.2.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
   "repository": {
     "type": "git",
-    "url": ""
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "url": "git+https://github.com/salamalala/ninastartertheme.git"
   },
   "author": "Nina Regli",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.12.13",
-    "@babel/preset-env": "^7.12.13",
-    "babel-loader": "^8.0.4",
-    "autoprefixer": "9.6.1",
-    "browser-sync": "^2.26.14",
-    "css-vars-ponyfill": "^1.17.2",
-    "cssnano": "4.1.10",
-    "del": "3.0.0",
-    "gulp": "4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "2.6.1",
-    "gulp-flatmap": "1.0.2",
-    "gulp-header": "2.0.5",
-    "gulp-jshint": "2.1.0",
-    "gulp-optimize-js": "1.1.0",
-    "gulp-postcss": "8.0.0",
-    "gulp-rename": "1.4.0",
-    "gulp-sass": "4.0.2",
-    "gulp-svgmin": "2.1.0",
-    "gulp-terser": "1.1.7",
-    "jshint": "2.9.6",
-    "jshint-stylish": "2.2.1",
-    "lazypipe": "1.0.1",
-    "node-sass": "^5.0.0",
-    "object-fit-images": "^3.2.4",
-    "webpack": "^4.26.1",
-    "webpack-stream": "^5.1.1"
-  },
   "browserslist": [
     "ie 11",
     "> 1%",
     "last 4 versions"
   ],
-  "jshintConfig": {
-    "esversion": 6
+  "bugs": {
+    "url": "https://github.com/salamalala/ninastartertheme/issues"
   },
-  "dependencies": {
-    "css-reset-and-normalize": "^2.3.5",
-    "natives": "^1.1.6"
-  }
+  "homepage": "https://github.com/salamalala/ninastartertheme#readme"
 }

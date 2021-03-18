@@ -1,14 +1,10 @@
-/*! ninastartertheme v1.0.0 | (c) 2021  | ISC License |  */
-/* line 2, assets/src/css/scss/editor-styles.scss */
 body #editor .wp-block {
   max-width: 90% !important;
   margin-left: auto !important;
-  margin-right: auto !important;
-}
+  margin-right: auto !important; }
+  body #editor .wp-block .alignfull {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
 
-/* line 7, assets/src/css/scss/editor-styles.scss */
-body #editor .wp-block .alignfull {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZWRpdG9yLXN0eWxlcy5jc3MiLCJzb3VyY2VzIjpbImVkaXRvci1zdHlsZXMuc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBHdXRlbmJlcmcgQmxvY2sgRWRpdG9yIHN0eWxlc1xuYm9keSAjZWRpdG9yIC53cC1ibG9jayB7XG4gIG1heC13aWR0aDogOTAlICFpbXBvcnRhbnQ7XG4gIG1hcmdpbi1sZWZ0OiBhdXRvICFpbXBvcnRhbnQ7XG4gIG1hcmdpbi1yaWdodDogYXV0byAhaW1wb3J0YW50O1xuXG4gIC5hbGlnbmZ1bGwge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICAgIG1hcmdpbi1yaWdodDogYXV0bztcbiAgfVxufVxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLEFBQUEsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUM7RUFDckIsU0FBUyxFQUFFLGNBQWM7RUFDekIsV0FBVyxFQUFFLGVBQWU7RUFDNUIsWUFBWSxFQUFFLGVBQWUsR0FPOUI7RUFWRCxBQUtFLElBTEUsQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUtwQixVQUFVLENBQUM7SUFDVCxLQUFLLEVBQUUsSUFBSTtJQUNYLFdBQVcsRUFBRSxJQUFJO0lBQ2pCLFlBQVksRUFBRSxJQUFJLEdBQ25CIn0= */
