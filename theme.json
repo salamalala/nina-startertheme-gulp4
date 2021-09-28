@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+         "contentSize": "75%",
+         "wideSize": "90%"
+     },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "duotone": [],
+      "gradients": [],
+      "palette": [
+        {
+            "name": "Black",
+            "slug": "black",
+            "color": "#000"
+        },
+        {
+            "name": "White",
+            "slug": "white",
+            "color": "#fff"
+        },
+        {
+            "name": "Dark Blue",
+            "slug": "dark-blue",
+            "color": "#1D3567"
+        },
+        {
+            "name": "Red",
+            "slug": "red",
+            "color": "#E02127"
+        }
+      ]
+    },
+    "typography": {
+            "customFontSize": false,
+            "dropCap": false,
+            "fontFamilies": [],
+            "fontSizes": []
+    }
+  }
+}

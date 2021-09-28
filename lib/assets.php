@@ -11,7 +11,7 @@ function custom_scripts() {
 	//Add filemtime in order to do cache busting
 	wp_enqueue_style( 'custom-styles', get_stylesheet_directory_uri() .'/assets/dist/css/main.css', array(), filemtime(get_stylesheet_directory() . '/assets/dist/css/main.css'), 'all');
 
-	wp_enqueue_script( 'custom-js', get_template_directory_uri(). '/assets/dist/js/main.min.js', array('jquery'), filemtime(get_template_directory().'/assets/dist/js/main.min.js'));
+	wp_enqueue_script( 'custom-js', get_template_directory_uri(). '/assets/dist/js/main.js', array('jquery'), filemtime(get_template_directory().'/assets/dist/js/main.js'));
 
 }
 
@@ -22,15 +22,27 @@ function custom_scripts() {
 add_action( 'enqueue_block_editor_assets', 'custom_gutenberg_styles' );
 
 function custom_gutenberg_styles() {
-	// Load the theme styles within Gutenberg.
-	 wp_enqueue_style( 'custom-gutenberg', get_template_directory_uri() .  '/assets/dist/css/editor-styles.css' );
+	// Load the theme fonts, styles and scripts within Gutenberg.
+	// wp_enqueue_style( 'theme-fonts', custom_theme_fonts_url() );
+
+	wp_enqueue_style( 'custom-gutenberg-styles', get_template_directory_uri() .  '/assets/dist/css/editor-styles.css' );
+	wp_enqueue_script('custom-gutenberg-script', get_stylesheet_directory_uri() . '/assets/dist/js/editor.js', array( 'wp-blocks', 'wp-dom' ), filemtime( get_stylesheet_directory() . '/assets/dist/js/editor.js' ), true);
 }
+
 
 /**
- * Remove all Gutenberg styles
+ * Optional: add custm fonts with Gutenberg 
  */
-add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+// function custom_theme_fonts_url() {
+// 	return 'https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap';
+// }
 
-function wps_deregister_styles() {
-  wp_dequeue_style( 'wp-block-library' );
-}
+/**
+ * Optional: remove all Gutenberg default styles on front end
+ */
+// add_action( 'wp_enqueue_scripts', 'custom_deregister_styles', 100 );
+//
+// function custom_deregister_styles() {
+// 	// wp_dequeue_style( 'wp-block-library-theme' );
+// 	// wp_dequeue_style( 'wp-block-library' );
+// }

@@ -3,7 +3,6 @@
 import { src, dest, watch, series, parallel } from 'gulp';
 // for dev and production flag
 import yargs from 'yargs';
-import sass from 'gulp-sass';
 import cleanCss from 'gulp-clean-css';
 import gulpif from 'gulp-if';
 import postcss from 'gulp-postcss';
@@ -15,6 +14,9 @@ import del from 'del';
 import webpack from 'webpack-stream';
 import named from 'vinyl-named';
 import browserSync from "browser-sync";
+
+// version > 5.0 gulp sass needs to be written like this:
+const sass = require("gulp-sass")(require("node-sass"));
 
 
 /**
@@ -34,10 +36,9 @@ var paths = {
     output: 'assets/dist/img/'
   },
 	scripts: {
-		input: 'assets/src/js/main.js',
+		input: ['assets/src/js/main.js','assets/src/js/editor.js'],
 		output: 'assets/dist/js',
-    watch: 'assets/src/js/**/*.js',
-    name: 'main.min.js'
+    watch: 'assets/src/js/**/*.js'
 	},
 	copy: {
 		input: ['assets/src/**/*','!assets/src/{img,js,css}','!assets/src/{img,js,css}/**/*'],
@@ -45,6 +46,9 @@ var paths = {
 	},
   php: {
     watch: ["**/*.php", "templates/**/*.twig"]
+  },
+	json: {
+    watch: ["**/*.json"]
   }
 };
 
@@ -77,7 +81,8 @@ export const clean = () => del([paths.output]);
 
 // in case there are multiple js files as entry points add it in an area: return src(['src/js/main.js','src/js/admin.js'])
 export const scripts = () => {
-  return src(paths.scripts.input)
+  return src(['assets/src/js/main.js','assets/src/js/editor.js'])
+	.pipe(named())
   .pipe(webpack({
     module: {
       rules: [
@@ -95,13 +100,13 @@ export const scripts = () => {
     mode: PRODUCTION ? 'production' : 'development',
     devtool: !PRODUCTION ? 'inline-source-map' : false,
     output: {
-      filename: paths.scripts.name
+      filename: '[name].js'
     },
     externals: {
       jquery: 'jQuery'
     },
   }))
-  .pipe(dest(paths.scripts.output));
+  .pipe(dest('assets/dist/js'));
 }
 
 export const watchForChanges = () => {
@@ -110,6 +115,7 @@ export const watchForChanges = () => {
   watch(paths.copy.input, series(copy, reload));
   watch(paths.scripts.watch, series(scripts, reload));
   watch(paths.php.watch, reload);
+	watch(paths.json.watch, reload);
 }
 
 const server = browserSync.create();

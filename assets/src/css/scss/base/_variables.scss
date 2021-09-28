@@ -29,16 +29,29 @@ $screen-xxxl: "(min-width: 150em)";
   --black : #000;
 
   // sizes
-  --ratio: 1.125;
-  --base-size: 1em;
+  --ratio: 1.2;
+  --base-size: 1rem;
 
-  --spacing-xs: calc( var(--base-size) / (2 * var(--ratio) ) );
-  --spacing-sm: calc( var(--base-size) / var(--ratio) );
+  --spacing-7xs: calc(var(--spacing-6xs) / var(--ratio));
+  --spacing-6xs: calc(var(--spacing-5xs) / var(--ratio));
+  --spacing-5xs: calc(var(--spacing-4xs) / var(--ratio));
+  --spacing-4xs: calc(var(--spacing-3xs) / var(--ratio));
+  --spacing-3xs: calc(var(--spacing-2xs) / var(--ratio));
+  --spacing-2xs: calc(var(--spacing-xs) / var(--ratio));
+  --spacing-xs: calc(var(--spacing-sm) / var(--ratio));
+  --spacing-sm: calc(var(--base-size) / var(--ratio));
+
   --spacing-base: var(--base-size);
-  --spacing-md: calc( var(--base-size) * var(--ratio) );
-  --spacing-lg: calc( var(--base-size) * (2 * var(--ratio) ) );
-  --spacing-xl: calc( var(--base-size) * (3 * var(--ratio) ) );
-  --spacing-xxl: calc( var(--base-size) * (4 * var(--ratio) ) );
+
+  --spacing-md: calc(var(--spacing-base) * var(--ratio));
+  --spacing-lg: calc(var(--spacing-md) * var(--ratio));
+  --spacing-xl: calc(var(--spacing-lg) * var(--ratio));
+  --spacing-2xl: calc(var(--spacing-xl) * var(--ratio));
+  --spacing-3xl: calc(var(--spacing-2xl) * var(--ratio));
+  --spacing-4xl: calc(var(--spacing-3xl) * var(--ratio));
+  --spacing-5xl: calc(var(--spacing-4xl) * var(--ratio));
+  --spacing-6xl: calc(var(--spacing-5xl) * var(--ratio));
+  --spacing-7xl: calc(var(--spacing-6xl) * var(--ratio));
 
 
   --letter-spacing-sm: 0.02em;
