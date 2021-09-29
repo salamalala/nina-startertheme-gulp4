@@ -9,4 +9,4 @@ Based on the Timber Starter Theme, modified for my needs. To use with ACF, Guten
 - Adjust package.json file & style.css file
 - npm run start for build and npm run build for production
 - Change Browsersync proxy
-- Replace Namespacing on assets file 'custom_'
+- Replace Namespacing on all php files 'custom_' 
