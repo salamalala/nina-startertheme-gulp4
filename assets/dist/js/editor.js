@@ -121,7 +121,7 @@ wp.domReady(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ninaregli/Local Sites/starterthemegulp4/app/public/wp-content/themes/ninastartertheme/assets/src/js/editor.js */"./assets/src/js/editor.js");
+module.exports = __webpack_require__(/*! /Users/ninaregli/Local Sites/ninastartertheme/app/public/wp-content/themes/nina-startertheme/assets/src/js/editor.js */"./assets/src/js/editor.js");
 
 
 /***/ })

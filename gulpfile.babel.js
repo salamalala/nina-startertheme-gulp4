@@ -121,7 +121,7 @@ export const watchForChanges = () => {
 const server = browserSync.create();
 export const serve = done => {
   server.init({
-    proxy: "nina-starter-theme.local"
+    proxy: "ninastartertheme.local"
   });
   done();
 };

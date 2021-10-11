@@ -2,7 +2,7 @@
 // Allowed Gutenberg Blocks
 
 
-add_filter( 'allowed_block_types', 'custom_allowed_block_types', 10, 2 );
+add_filter( 'allowed_block_types_all', 'custom_allowed_block_types', 10, 2 );
 
 function custom_allowed_block_types( $allowed_block_types, $post ) {
 
@@ -11,7 +11,6 @@ function custom_allowed_block_types( $allowed_block_types, $post ) {
       'core/paragraph',
       'core/image',
       'core/heading',
-      'core/pullquote',
       'core/quote',
       'core/file',
       'core/video',
@@ -20,6 +19,7 @@ function custom_allowed_block_types( $allowed_block_types, $post ) {
       'core/file',
       'core/separator',
 
+      // 'core/pullquote',
       // 'core/gallery',
       // 'core/list',
       // 'core/shortcode',

@@ -2323,7 +2323,7 @@ module.exports = fix;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ninaregli/Local Sites/starterthemegulp4/app/public/wp-content/themes/ninastartertheme/assets/src/js/main.js */"./assets/src/js/main.js");
+module.exports = __webpack_require__(/*! /Users/ninaregli/Local Sites/ninastartertheme/app/public/wp-content/themes/nina-startertheme/assets/src/js/main.js */"./assets/src/js/main.js");
 
 
 /***/ }),
