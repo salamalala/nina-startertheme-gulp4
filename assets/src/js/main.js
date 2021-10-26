@@ -2,8 +2,7 @@ import $ from 'jquery';
 import objectFitImages from 'object-fit-images';
 import cssVars from 'css-vars-ponyfill';
 import smoothscroll from 'smoothscroll-polyfill';
-
-import './utils/slider';
+// import burgerAnimation from './utils/burgerAnimation';
 
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -39,6 +39,14 @@
 //   }
 // }
 //
+// @media #{$screen-xs-sm}  {
+//   :root {
+//     --bp: 'screen-xs-sm';
+//     --bp-color: black;
+//     --bp-bg-color: white;
+//   }
+// }
+//
 // @media #{$screen-sm}  {
 //   :root {
 //     --bp: 'screen-sm';
@@ -54,6 +62,13 @@
 //     --bp-bg-color: black;
 //   }
 // }
+// @media #{$screen-md-lg}  {
+//   :root {
+//     --bp: 'screen-md-lg';
+//     --bp-color: black;
+//     --bp-bg-color: white;
+//   }
+// }
 //
 // @media #{$screen-lg} {
 //   :root {
@@ -63,6 +78,13 @@
 //   }
 // }
 //
+// @media #{$screen-lg-xl} {
+//   :root {
+//     --bp: 'screen-lg';
+//     --bp-color: white;
+//     --bp-bg-color: black;
+//   }
+// }
 //
 // @media #{$screen-xl} {
 //   :root {
@@ -72,8 +94,23 @@
 //   }
 // }
 //
+// @media #{$screen-xl-xxl} {
+//   :root {
+//     --bp: 'screen-xl';
+//     --bp-color: black;
+//     --bp-bg-color: white;
+//   }
+// }
+//
 //
 // @media #{$screen-xxl} {
+//   :root {
+//     --bp: 'screen-xxl';
+//     --bp-color: white;
+//     --bp-bg-color: black;
+//   }
+// }
+// @media #{$screen-xxxl} {
 //   :root {
 //     --bp: 'screen-xxl';
 //     --bp-color: white;
