@@ -8,17 +8,7 @@
 
 		<a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
 
-		<header class="siteHeader" >
-
-			{% block header %}
-				<h1 class="siteHeader__logo">
-          <a href="{{site.url}}" rel="home" alt="{{site.name}}">
-      			Here the svg logo
-          </a>
-        </h1>
-			{% endblock %}
-
-		</header>
+		{% include 'header.twig' %}
 
     <main id="content" role="main" class="siteMain">
 
@@ -28,14 +18,7 @@
 
 		</main>
 
-		{% block footer %}
-
-			<footer id="footer" class="siteFooter">
-				{% include 'footer.twig' %}
-			</footer>
-
-			{{ function('wp_footer') }}
-		{% endblock %}
+		{% include 'footer.twig' %}
 
 	</body>
 </html>

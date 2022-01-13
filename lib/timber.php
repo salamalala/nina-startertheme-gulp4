@@ -46,6 +46,7 @@ class CustomSite extends Timber\Site {
   		$context[$key] = new Timber\Menu($key);
   	}
 		$context['options'] = get_fields('option');
+		$context['is_front_page'] = is_front_page();
 		$context['site'] = $this;
 		return $context;
 	}

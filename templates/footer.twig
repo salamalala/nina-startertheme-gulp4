@@ -1,1 +1,5 @@
+<footer id="footer" class="siteFooter">
   <p class="footer__copyright">&copy; {{ now|date('Y') }} {{ bloginfo('name') }}</p>
+</footer>
+
+{{ function('wp_footer') }}
