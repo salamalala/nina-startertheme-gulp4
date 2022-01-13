@@ -2,6 +2,15 @@ html {
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 18px;
+
+  @media #{$screen-lg} {
+    font-size: 20px;
+  }
+
+  @media #{$screen-xxl} {
+    font-size: 22px;
+  }
 }
 
 *, *:before, *:after {

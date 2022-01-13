@@ -29,33 +29,35 @@ $screen-xxxl: "(min-width: 150em)";
   --black : #000;
 
   // sizes
-  --ratio: 1.2;
+  --ratio: 1.25;
   --base-size: 1rem;
 
-  --spacing-7xs: calc(var(--spacing-6xs) / var(--ratio));
-  --spacing-6xs: calc(var(--spacing-5xs) / var(--ratio));
-  --spacing-5xs: calc(var(--spacing-4xs) / var(--ratio));
-  --spacing-4xs: calc(var(--spacing-3xs) / var(--ratio));
-  --spacing-3xs: calc(var(--spacing-2xs) / var(--ratio));
-  --spacing-2xs: calc(var(--spacing-xs) / var(--ratio));
-  --spacing-xs: calc(var(--spacing-sm) / var(--ratio));
-  --spacing-sm: calc(var(--base-size) / var(--ratio));
+  --spacing-sm-9: calc(var(--spacing-sm-8) / var(--ratio));
+  --spacing-sm-8: calc(var(--spacing-sm-7) / var(--ratio));
+  --spacing-sm-7: calc(var(--spacing-sm-6) / var(--ratio));
+  --spacing-sm-6: calc(var(--spacing-sm-5) / var(--ratio));
+  --spacing-sm-5: calc(var(--spacing-sm-4) / var(--ratio));
+  --spacing-sm-4: calc(var(--spacing-sm-3) / var(--ratio));
+  --spacing-sm-3: calc(var(--spacing-sm-2) / var(--ratio));
+  --spacing-sm-2: calc(var(--spacing-sm-1) / var(--ratio));
+  --spacing-sm-1: calc(var(--base-size) / var(--ratio));
 
   --spacing-base: var(--base-size);
 
-  --spacing-md: calc(var(--spacing-base) * var(--ratio));
-  --spacing-lg: calc(var(--spacing-md) * var(--ratio));
-  --spacing-xl: calc(var(--spacing-lg) * var(--ratio));
-  --spacing-2xl: calc(var(--spacing-xl) * var(--ratio));
-  --spacing-3xl: calc(var(--spacing-2xl) * var(--ratio));
-  --spacing-4xl: calc(var(--spacing-3xl) * var(--ratio));
-  --spacing-5xl: calc(var(--spacing-4xl) * var(--ratio));
-  --spacing-6xl: calc(var(--spacing-5xl) * var(--ratio));
-  --spacing-7xl: calc(var(--spacing-6xl) * var(--ratio));
+  --spacing-lg-1: calc(var(--spacing-base) * var(--ratio));
+  --spacing-lg-2: calc(var(--spacing-lg-1) * var(--ratio));
+  --spacing-lg-3: calc(var(--spacing-lg-2) * var(--ratio));
+  --spacing-lg-4: calc(var(--spacing-lg-3) * var(--ratio));
+  --spacing-lg-5: calc(var(--spacing-lg-4) * var(--ratio));
+  --spacing-lg-6: calc(var(--spacing-lg-5) * var(--ratio));
+  --spacing-lg-7: calc(var(--spacing-lg-6) * var(--ratio));
+  --spacing-lg-8: calc(var(--spacing-lg-7) * var(--ratio));
+  --spacing-lg-9: calc(var(--spacing-lg-8) * var(--ratio));
 
 
-  --line-height-sm: 1.25;
-  --line-height-base: 1.5;
+  --line-height-sm: 1.1;
+  --line-height-base: 1.4;
+  --line-height-lg: 1.5;
 
 
   --letter-spacing-sm: 0.02em;
