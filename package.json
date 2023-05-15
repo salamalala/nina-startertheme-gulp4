@@ -7,9 +7,9 @@
     "lib": "lib"
   },
   "dependencies": {
+    "@wordpress/dom-ready": "^3.3.0",
     "css-reset-and-normalize": "^2.3.5",
     "gulp-sass": "^5.0.0",
-    "node-sass": "^6.0.1",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
