@@ -8,10 +8,12 @@ require get_template_directory() . '/lib/setup.php';
 require get_template_directory() . '/lib/timber.php';
 require get_template_directory() . '/lib/assets.php';
 require get_template_directory() . '/lib/cpt-ct.php';
+require get_template_directory() . '/lib/acf.php';
 require get_template_directory() . '/lib/acf-blocks.php';
 require get_template_directory() . '/lib/acf-blocks-callbacks.php';
-require get_template_directory() . '/lib/gutenberg-blocks.php';
 require get_template_directory() . '/lib/gutenberg-disable-fullscreen.php';
+require get_template_directory() . '/lib/gutenberg-disable-pattern.php';
+require get_template_directory() . '/lib/block-allowed.php';
 
 require get_template_directory() . '/lib/login-branding.php';
 require get_template_directory() . '/lib/dashboard.php';
@@ -36,3 +38,6 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+// move YOAST settings panel in editor to bottom
+add_filter( 'wpseo_metabox_prio', function() { return 'low'; } );
