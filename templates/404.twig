@@ -1,5 +1,9 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	Sorry, we couldn't find what you're looking for.
+	<div class="fourzerofour">
+	<h1 class="fourzerofour__title">{{ __('Fehler 404', 'XXXX')}}</h1>
+	<p class="fourzerofour__explanation"> {{ __('Diese Seite konnte leider nicht gefunden werden', 'XXXX')}}</p>
+	<a href="{{site.url}}" class="fourzerofour__link">{{ __('Zurück zur Homepage', 'XXXX')}}</a>
+</div>
 {% endblock %}

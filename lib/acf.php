@@ -1,7 +1,19 @@
 <?php
 
+// add options page
+add_action('acf/init', 'spsg_op_init');
 
-if( function_exists('acf_add_local_field_group') ):
+function spsg_op_init() {
 
+  $parent =  acf_add_options_page(array(
+      'page_title'    => __('Theme General Settings'),
+      'menu_title'    => __('XXXX Settings'),
+  ));
 
-endif;
+  // Add sub page.
+  $footer = acf_add_options_sub_page(array(
+     'page_title'  => __('Footer'),
+     'menu_title'  => __('Footer'),
+     'parent_slug' => $parent['menu_slug'],
+  ));
+}
