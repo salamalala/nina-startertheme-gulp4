@@ -12,6 +12,10 @@ function nr_login_styles() { ?>
         color: black !important;
       }
 
+      .login a {
+        color: black !important;
+      }
+
       div#login > h1 a {
         display: none;
       }
@@ -44,7 +48,7 @@ function nr_login_styles() { ?>
       input[type=submit] {
         background-color: black !important;
         text-transform: uppercase;
-
+        color: white !important;
       }
     </style>
 <?php }
