@@ -5,13 +5,13 @@
 /**
  * Enqueue WordPress theme styles
  */
-add_action( 'wp_enqueue_scripts', 'custom_scripts' );
+add_action( 'wp_enqueue_scripts', 'xxxx_scripts' );
 
-function custom_scripts() {
+function xxxx_scripts() {
 	//Add filemtime in order to do cache busting
-	wp_enqueue_style( 'custom-styles', get_stylesheet_directory_uri() .'/assets/dist/css/main.css', array(), filemtime(get_stylesheet_directory() . '/assets/dist/css/main.css'), 'all');
+	wp_enqueue_style( 'xxxx-styles', get_stylesheet_directory_uri() .'/assets/dist/css/main.css', array(), filemtime(get_stylesheet_directory() . '/assets/dist/css/main.css'), 'all');
 
-	wp_enqueue_script( 'custom-js', get_template_directory_uri(). '/assets/dist/js/main.js', array('jquery'), filemtime(get_template_directory().'/assets/dist/js/main.js'));
+	wp_enqueue_script( 'xxxx-js', get_template_directory_uri(). '/assets/dist/js/main.js', array('jquery'), filemtime(get_template_directory().'/assets/dist/js/main.js'));
 
 }
 
@@ -19,14 +19,14 @@ function custom_scripts() {
 /**
  * Enqueue WordPress theme styles within Gutenberg.
  */
-add_action( 'enqueue_block_editor_assets', 'custom_gutenberg_styles' );
+add_action( 'enqueue_block_editor_assets', 'xxxx_gutenberg_styles' );
 
-function custom_gutenberg_styles() {
+function xxxx_gutenberg_styles() {
 	// Load the theme fonts, styles and scripts within Gutenberg.
-	// wp_enqueue_style( 'theme-fonts', custom_theme_fonts_url() );
+	// wp_enqueue_style( 'theme-fonts', xxxx_theme_fonts_url() );
 
-	wp_enqueue_style( 'custom-gutenberg-styles', get_template_directory_uri() .  '/assets/dist/css/editor-styles.css' );
-	wp_enqueue_script('custom-gutenberg-script', get_stylesheet_directory_uri() . '/assets/dist/js/editor.js', array( 'wp-blocks', 'wp-dom' ), filemtime( get_stylesheet_directory() . '/assets/dist/js/editor.js' ), true);
+	wp_enqueue_style( 'xxxx-gutenberg-styles', get_template_directory_uri() .  '/assets/dist/css/editor-styles.css' );
+	wp_enqueue_script('xxxx-gutenberg-script', get_stylesheet_directory_uri() . '/assets/dist/js/editor.js', array( 'wp-blocks', 'wp-dom' ), filemtime( get_stylesheet_directory() . '/assets/dist/js/editor.js' ), true);
 }
 
 

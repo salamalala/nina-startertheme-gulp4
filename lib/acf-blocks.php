@@ -2,9 +2,9 @@
 
 
 
-add_action('acf/init', 'custom_acf_init');
+add_action('acf/init', 'xxxx_acf_init');
 
-function custom_acf_init() {
+function xxxx_acf_init() {
 
 	if( function_exists('acf_register_block') ) {
 

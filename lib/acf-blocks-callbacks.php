@@ -1,7 +1,7 @@
 <?php
 
 // Default Callback
-function custom_acf_block_render_callback( $block) {
+function xxxx_acf_block_render_callback( $block) {
   $context['block'] = $block;
   $context['fields'] = get_fields();
 

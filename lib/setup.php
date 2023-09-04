@@ -1,8 +1,8 @@
 <?php
 
-add_action( 'after_setup_theme','custom_setup');
+add_action( 'after_setup_theme','xxxx_setup');
 
-function custom_setup() {
+function xxxx_setup() {
 
   register_nav_menus( array (
     'header_first'	=> esc_html__( 'Header-First', ' ' ),
