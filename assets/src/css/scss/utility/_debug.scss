@@ -1,3 +1,15 @@
 pre.xdebug-var-dump {
-    overflow: visible;
+  overflow: visible;
+  position: relative;
+  z-index: 999;
+
+  //   remove path
+  small:first-child {
+    display: none;
+  }
+
+  > * {
+    position: relative;
+    z-index: 999;
+  }
 }
