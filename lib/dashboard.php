@@ -45,9 +45,9 @@ add_action('admin_init', 'remove_dashboard_meta');
 show_admin_bar( false );
 
 // Remove "Post" and "Comments" from admin bar
-add_action('admin_menu', 'fml_post_remove');
+add_action('admin_menu', 'nr_post_remove');
 
-function fml_post_remove () {
+function nr_post_remove () {
    remove_menu_page('edit.php');
 	 remove_menu_page('edit-comments.php');
 }
