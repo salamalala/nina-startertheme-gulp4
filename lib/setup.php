@@ -5,9 +5,9 @@ add_action( 'after_setup_theme','xxxx_setup');
 function xxxx_setup() {
 
   register_nav_menus( array (
-    'header_first'	=> esc_html__( 'Header-First', ' ' ),
-    'header_second'	=> esc_html__( 'Header-Second', ' ' ),
-    'language_switcher'	=> esc_html__( 'Language Switcher', ' ' ),
+    'header_first'	=> esc_html__( 'Header-First', 'xxxx' ),
+    'header_second'	=> esc_html__( 'Header-Second', 'xxxx' ),
+    'language_switcher'	=> esc_html__( 'Language Switcher', 'xxxx' ),
     'footer' => esc_html__( 'Footer', ' ' )
   ) );
 
