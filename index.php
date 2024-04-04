@@ -13,7 +13,9 @@
  * @since   Timber 0.1
  */
 
- $context = Timber::get_context();
- $context['posts'] = new Timber\PostQuery();
+ use Timber\Timber;
+ 
+ $context = Timber::context();
+  ;
 
  Timber::render( 'index.twig', $context );

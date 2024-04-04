@@ -4,8 +4,18 @@
  */
 
 
+
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/src/StarterSite.php';
+
+Timber\Timber::init();
+
+// Sets the directories to find the twig files
+Timber::$dirname = 'templates';
+
+new StarterSite();
+
 require get_template_directory() . '/lib/setup.php';
-require get_template_directory() . '/lib/timber.php';
 require get_template_directory() . '/lib/assets.php';
 require get_template_directory() . '/lib/cpt-ct.php';
 require get_template_directory() . '/lib/acf.php';

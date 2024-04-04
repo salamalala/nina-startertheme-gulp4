@@ -24,6 +24,12 @@
   	}
 	},
   "require": {
-	  "wpackagist-plugin/timber-library": "1.*"
+	  "wpackagist-plugin/timber-library": "1.*",
+    "timber/timber": "^2.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
   }
 }

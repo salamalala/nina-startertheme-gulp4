@@ -19,7 +19,7 @@
 			<a href="{{post.link|e('esc_url')}}" class="tease__titleLink">{{post.title|e('esc_html')}}</a>
 		</h2>
 
-	  <p class="tease__preview">{{post.preview.length(25)|e('esc_html')}}</p>
+	  <p class="tease__preview">{{post.excerpt.length(25)|e('esc_html')}}</p>
 
 		<a href="{{post.link|e('esc_url')}}" class="tease__moreInfo">{{ __('Mehr Infos', 'XXXX')}}</a>
 

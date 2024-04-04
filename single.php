@@ -9,9 +9,7 @@
  * @since    Timber 0.1
  */
 
-$context = Timber::get_context();
-$post = new Timber\Post();
-$context['post'] = $post;
+$context = Timber::context();
 
 $context['link'] = get_post_type_archive_link( $post_type );
 	
