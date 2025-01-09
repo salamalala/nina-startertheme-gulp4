@@ -1,1 +1,14 @@
-// Gutenberg Block Editor styles - could be all done now in theme.json file? -> https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/
+.wp-block-post-title {
+  // font-family: var(--font-heading);
+}
+
+.editor-styles-wrapper {
+  // font-family: var(--font-paragraph);
+
+  > * {
+    max-width: 90%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

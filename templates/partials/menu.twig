@@ -1,10 +1,10 @@
 {% if menu %}
 	{% for item in menu %}
-		<li class="{{ item.classes | join(' ') }} {{menuItem}} {{item.children ? "menuList__itemHasChildren"}}">
-			<a href="{{ item.link }}" class="{{menuLink}} {{item.children ? "menuList__linkHasChildren"}}"  aria-haspopup="{{item.children ? "true" : "false"}}" aria-expanded="false">{{item.title}}</a>
-			{% if item.get_children %}
-			<ul class="menuList__listChildren" aria-label="Submenu {{item.title}}">
-			  {% include "partials/menu.twig" with {'menu': item.get_children} %}
+		<li class="{{ item.classes | join(' ') }} {{menuItem}} {{item.children ? "nav__itemHasChildren"}}">
+			<a href="{{ item.link }}" class="{{menuLink}} {{item.children ? "nav__linkHasChildren"}}"  aria-haspopup="{{item.children ? "true" : "false"}}" aria-expanded="false">{{item.title}}</a>
+			{% if item.children %}
+			<ul class="nav__listChildren" aria-label="Submenu {{item.title}}">
+			  {% include "partials/menu.twig" with {'menu': item.children} %}
 			</ul>
 			{% endif %}
 		</li>

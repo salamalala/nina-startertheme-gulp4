@@ -31,6 +31,16 @@ function xxxx_gutenberg_styles() {
 
 
 /**
+ * Enqueue content assets but only in the Editor.
+ */
+function spbe_enqueue_editor_content_assets() {
+	if ( is_admin() ) {
+		wp_enqueue_style( 'spbe-gutenberg-styles', get_template_directory_uri() .  '/assets/dist/css/editor-styles.css' );
+	}
+}
+add_action( 'enqueue_block_assets', 'spbe_enqueue_editor_content_assets' );
+
+/**
  * Optional: add custm fonts with Gutenberg 
  */
 // function custom_theme_fonts_url() {
