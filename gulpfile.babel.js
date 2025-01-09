@@ -9,14 +9,13 @@ import postcss from "gulp-postcss";
 import sourcemaps from "gulp-sourcemaps";
 import autoprefixer from "autoprefixer";
 import imagemin from "gulp-imagemin";
+import gulp from "gulp";
+import sass from "gulp-dart-sass";
 // deleting assets dist folder
 import del from "del";
 import webpack from "webpack-stream";
 import named from "vinyl-named";
 import browserSync from "browser-sync";
-
-const sass = require("gulp-sass")(require("sass"));
-sass.compiler = require("sass");
 
 /**
  * Paths to project folders

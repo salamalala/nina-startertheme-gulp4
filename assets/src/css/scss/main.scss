@@ -1,19 +1,19 @@
-@import "node_modules/css-reset-and-normalize/scss/reset-and-normalize";
+@use "node_modules/css-reset-and-normalize/scss/reset-and-normalize" as *;
 
-@import "base/variables";
-@import "base/mixins";
-@import "base/html";
-@import "base/body";
-@import "base/typography";
+@use "base/variables" as *;
+@use "base/mixins" as *;
+@use "base/html" as *;
+@use "base/body" as *;
+@use "base/typography" as *;
 
-@import "accessibility/screen-reader-text";
+@use "accessibility/screen-reader-text" as *;
 
-@import "utility/debug";
-@import "utility/breakpointSign";
+@use "utility/debug" as *;
+@use "utility/breakpointSign" as *;
 
-@import "partials/siteMain";
-@import "partials/siteFooter";
-@import "partials/siteHeader";
+@use "partials/siteMain" as *;
+@use "partials/siteFooter" as *;
+@use "partials/siteHeader" as *;
 
-@import "templates/single";
-@import "templates/page";
+@use "templates/single" as *;
+@use "templates/page" as *;

@@ -1,8 +1,8 @@
- // breakpoint box
- body {
-
+@use "base/variables" as *;
+// breakpoint box
+body {
   &:before {
-    content: var(--bp, 'smaller than xs');
+    content: var(--bp, "smaller than xs");
     position: fixed;
     z-index: 99;
     bottom: 1em;
@@ -10,40 +10,38 @@
     color: var(--bp-color);
     background-color: var(--bp-bg-color);
     border: black solid 2px;
-    padding: .5em;
+    padding: 0.5em;
   }
-
- }
- 
+}
 
 //breakpoint variables
 @media #{$screen-xs} {
   :root {
-    --bp: 'screen-xs';
+    --bp: "screen-xs";
     --bp-color: black;
     --bp-bg-color: white;
   }
 }
 
-@media #{$screen-xs-sm}  {
+@media #{$screen-xs-sm} {
   :root {
-    --bp: 'screen-xs-sm';
+    --bp: "screen-xs-sm";
     --bp-color: black;
     --bp-bg-color: white;
   }
 }
 
-@media #{$screen-sm}  {
+@media #{$screen-sm} {
   :root {
-    --bp: 'screen-sm';
+    --bp: "screen-sm";
     --bp-color: black;
     --bp-bg-color: white;
   }
 }
 
-@media #{$screen-sm-md}  {
+@media #{$screen-sm-md} {
   :root {
-    --bp: 'screen-sm-md';
+    --bp: "screen-sm-md";
     --bp-color: black;
     --bp-bg-color: white;
   }
@@ -51,14 +49,14 @@
 
 @media #{$screen-md} {
   :root {
-    --bp: 'screen-md';
+    --bp: "screen-md";
     --bp-color: white;
     --bp-bg-color: black;
   }
 }
-@media #{$screen-md-lg}  {
+@media #{$screen-md-lg} {
   :root {
-    --bp: 'screen-md-lg';
+    --bp: "screen-md-lg";
     --bp-color: black;
     --bp-bg-color: white;
   }
@@ -66,7 +64,7 @@
 
 @media #{$screen-lg} {
   :root {
-    --bp: 'screen-lg';
+    --bp: "screen-lg";
     --bp-color: white;
     --bp-bg-color: black;
   }
@@ -74,7 +72,7 @@
 
 @media #{$screen-lg-xl} {
   :root {
-    --bp: 'screen-lg';
+    --bp: "screen-lg";
     --bp-color: white;
     --bp-bg-color: black;
   }
@@ -82,7 +80,7 @@
 
 @media #{$screen-xl} {
   :root {
-    --bp: 'screen-xl';
+    --bp: "screen-xl";
     --bp-color: black;
     --bp-bg-color: white;
   }
@@ -90,23 +88,22 @@
 
 @media #{$screen-xl-xxl} {
   :root {
-    --bp: 'screen-xl';
+    --bp: "screen-xl";
     --bp-color: black;
     --bp-bg-color: white;
   }
 }
 
-
 @media #{$screen-xxl} {
   :root {
-    --bp: 'screen-xxl';
+    --bp: "screen-xxl";
     --bp-color: white;
     --bp-bg-color: black;
   }
 }
 @media #{$screen-xxxl} {
   :root {
-    --bp: 'screen-xxl';
+    --bp: "screen-xxl";
     --bp-color: white;
     --bp-bg-color: black;
   }

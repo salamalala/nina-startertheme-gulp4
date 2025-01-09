@@ -20,14 +20,13 @@
     "del": "^6.0.0",
     "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-dart-sass": "^1.1.0",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^6.2.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "sass": "^1.62.1",
     "vinyl-named": "^1.1.0",
-    "webpack-stream": "^6.1.2",
+    "webpack-stream": "^7.0.0",
     "yargs": "^16.2.0"
   },
   "scripts": {
@@ -41,7 +40,6 @@
   "author": "Nina Regli",
   "license": "ISC",
   "browserslist": [
-    "ie 11",
     "> 1%",
     "last 4 versions"
   ],
