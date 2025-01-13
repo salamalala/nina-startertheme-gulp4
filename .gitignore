@@ -2,3 +2,4 @@ node_modules
 vendor
 wp-content
 .env
+auth.json
