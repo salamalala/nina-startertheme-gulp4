@@ -12,10 +12,7 @@
   "require": {
     "timber/timber": "^2.3",
     "wpengine/advanced-custom-fields-pro": "^6.3",
-    "deliciousbrains-plugin/wp-migrate-db-pro": "*",
-    "deliciousbrains-plugin/wp-migrate-db-pro-cli": "*",
-    "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
-    "deliciousbrains-plugin/wp-migrate-db-pro-theme-plugin-files": "*"
+    "deliciousbrains-plugin/wp-migrate-db-pro": "*"
   },
   "extra": {
     "installer-paths": {

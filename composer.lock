@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d9bcb463e3f5d193e8cdc6c16fe45c4",
+    "content-hash": "86aca8af28ce0c7e63b8ec477183f482",
     "packages": [
         {
             "name": "composer/installers",
@@ -158,42 +158,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro&version=2.7.0"
-            },
-            "require": {
-                "composer/installers": "~1.0 || ~2.0"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
-            "name": "deliciousbrains-plugin/wp-migrate-db-pro-cli",
-            "version": "1.6.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro-cli&version=1.6.0"
-            },
-            "require": {
-                "composer/installers": "~1.0 || ~2.0"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
-            "name": "deliciousbrains-plugin/wp-migrate-db-pro-media-files",
-            "version": "2.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro-media-files&version=2.1.0"
-            },
-            "require": {
-                "composer/installers": "~1.0 || ~2.0"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
-            "name": "deliciousbrains-plugin/wp-migrate-db-pro-theme-plugin-files",
-            "version": "1.2.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro-theme-plugin-files&version=1.2.0"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
