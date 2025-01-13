@@ -1,6 +1,5 @@
 <?php
 
-
 $args = [
     'label'               => __($single, ' '),
     'description'         => __($single, ' '),
