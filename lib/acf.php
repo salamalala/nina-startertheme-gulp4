@@ -2,9 +2,9 @@
 
 
 // add options page
-add_action('acf/init', 'spsg_op_init');
+add_action('acf/init', 'xxxx_op_init');
 
-function spsg_op_init() {
+function xxxx_op_init() {
 
   $parent =  acf_add_options_page(array(
       'page_title'    => __('Theme General Settings'),
