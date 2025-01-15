@@ -24,6 +24,7 @@ function XXXX_setup() {
     )
   );
 
+  
   // Gutenberg settings:
   // add theme support for editor styles
   // add_theme_support( 'align-wide' );
