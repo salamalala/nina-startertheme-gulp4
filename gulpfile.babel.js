@@ -33,8 +33,8 @@ var paths = {
     watch: "assets/src/css/scss/**/*.scss",
   },
   image: {
-    input: "assets/src/img/**/*.{jpg,JPG,jpeg,png,svg,gif}",
-    output: "assets/dist/img/",
+    input: "assets/src/media/**/*.{jpg,JPG,jpeg,png,svg,gif}",
+    output: "assets/dist/media/",
   },
   scripts: {
     input: ["assets/src/js/main.js", "assets/src/js/editor.js"],
@@ -62,9 +62,13 @@ const PRODUCTION = yargs.argv.prod;
 export const styles = () => {
   return src(paths.styles.input)
     .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
-    .pipe(sass().on("error", sass.logError))
+    .pipe(
+      sass({
+        silenceDeprecations: ["legacy-js-api", "mixed-decls"],
+      }).on("error", sass.logError)
+    )
     .pipe(gulpif(PRODUCTION, postcss([autoprefixer])))
-    .pipe(gulpif(PRODUCTION, cleanCss({ compatibility: "ie8" })))
+    .pipe(gulpif(PRODUCTION, cleanCss()))
     .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
     .pipe(dest(paths.styles.output))
     .pipe(server.stream());

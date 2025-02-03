@@ -1,29 +1,4 @@
-.post  {
-
-  // should approx align with layout in theme.json -> https://make.wordpress.org/core/2021/06/29/on-layout-and-content-width-in-wordpress-5-8/
+.single {
   &__content {
-    > * {
-        max-width: 60%;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-    > .alignwide {
-      max-width: 75%;
-    }
-
-    > .alignfull {
-      max-width: none;
-    }
-
-    > .alignleft {
-      float: left;
-      margin-right: var(--spacing-md);
-    }
-
-    > .alignright {
-      float: right;
-      margin-right: var(--spacing-md);
-    }
   }
 }

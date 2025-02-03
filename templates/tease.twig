@@ -5,19 +5,19 @@
 			<a href="{{post.link|e('esc_url')}}">
 				{% set post_image = post.thumbnail.src %}
 				<img
-					srcset ="{{ post_image|resize(480)|e('esc_url') }} 480w, {{ post_image|resize(1280)|e('esc_url') }} 1280w, {{ post_image|resize(1920)|e('esc_url') }} 1920w"
-					sizes = "(min-width: 768px) 25vw, 40vw"
-					src = "{{ post_image|e('esc_url')}}"
-					alt= "{{post.title|e('html_attr')}}">
+					srcset ="{{ post.thumbnail.srcset}}"
+					src = "{{ post.thumbnail.src }}"
+					alt= "{{post.title}}"
+					class= "tease__img">
 			</a>
 		</div>
 	{% endif %}
 
 	<div class="tease__text">
 
-		<h2 class="tease__title">
+		<h1 class="tease__title">
 			<a href="{{post.link|e('esc_url')}}" class="tease__titleLink">{{post.title|e('esc_html')}}</a>
-		</h2>
+		</h1>
 
 	  <p class="tease__preview">{{post.excerpt.length(25)|e('esc_html')}}</p>
 
